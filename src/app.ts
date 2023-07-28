@@ -6,9 +6,9 @@ app.use(express.static("public"))
 
 app.get("/", (req: Request, res: Response) => {
   return res.json({
-    status: "success",
-    result: "we did it!",
+    success: true,
+    message: "we did it!",
   })
 })
 
-app.listen(3000, () => console.log("listing on port 3000"))
+export default app
